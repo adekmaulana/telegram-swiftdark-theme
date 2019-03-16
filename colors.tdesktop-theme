@@ -1,6 +1,6 @@
 //////////////////////////////////////////////////////////////////////////////////////////////////
 //                                                                                              //
-//                          SwiftDark theme v1.1 for Telegram Desktop.                          //
+//                          SwiftDark theme v2.1 for Telegram Desktop.                          //
 //                                                                                              //
 //                                                                                              //
 //        Source code: https://github.com/adekmaulana/telegram-swiftdark-theme                  //
@@ -49,14 +49,14 @@ imageBgTransparent: COLOR_WHITE;                // Image background when display
 
 //widgets
 activeButtonBg: COLOR_PURPLE_PIXEL;             // Currently selected button background
-activeButtonBgOver: #00a32b;                    // Mouse over currently selected button background
-activeButtonBgRipple: COLOR_PURPLE_RIPPLE_ACTIVE;// Primary button background color (and active chat) - Press & hold
+activeButtonBgOver: #6a65ca;                    // Mouse over currently selected button background
+activeButtonBgRipple: #6a65ca;// Primary button background color (and active chat) - Press & hold
 activeButtonFg: COLOR_WHITE;                    // Currently selected button text
 activeButtonFgOver: activeButtonFg;             // Mouse over currently selected button text
 activeButtonSecondaryFg: COLOR_WHITE;           // Counter color on primary button
 activeButtonSecondaryFgOver: COLOR_WHITE;       // Counter color on primary button (hover)
 activeLineFg: COLOR_PURPLE_PIXEL;                 // Active input field line color (normal)
-activeLineFgError: #e48383;                     // Active input field line color (error)
+activeLineFgError: #d12323;                     // Active input field line color (error)
 
 lightButtonBg: COLOR_DARK;                      // Secondary button background color (default)
 lightButtonBgOver: COLOR_PURPLE_PIXEL;          // Secondary button background color (hover)
@@ -83,8 +83,8 @@ menuSubmenuArrowFg: #373737;                    // Default popup menu submenu ar
 menuFgDisabled: #727272;                        // Default popup menu item disabled text (like unavailable items in message field context menu)
 menuSeparatorFg: COLOR_DARK;                    // Default popup menu separator (like in message field context menu)
 
-scrollBarBg: #15cd7d53;                         // Scrollbar (chats list) current position
-scrollBarBgOver: #15cd7d7a;                     // Mouse over scrollbar (chats list) current position
+scrollBarBg: #5e5a9feb;                         // Scrollbar (chats list) current position
+scrollBarBgOver: #5e5a9f53;                     // Mouse over scrollbar (chats list) current position
 scrollBg: #0000001a;                            // Scrollbar (chats list) background
 scrollBgOver: #0000002c;                        // Mouse over scrollbar (chats list) background
 
@@ -148,7 +148,7 @@ cancelIconFgOver: menuIconFgOver;               // Default for settings close ic
 // boxes
 boxBg: COLOR_DARK;                              // Popup windows background color
 boxTextFg: COLOR_GRAY;                          // Popup windows text color
-boxTextFgGood: #4ab44a;                         // Popup windows "good" text (e.g. "Username available")
+boxTextFgGood: #5e7a9f;                         // Popup windows "good" text (e.g. "Username available")
 boxTextFgError: #d84d4d;                        // Popup windows "bad" text (e.g. "Username already taken")
 boxTitleFg: COLOR_WHITE;                        // Popup windows titles color (sessions, contacts...)
 boxSearchBg: boxBg;                             // Box search field background (like in contacts box)
@@ -201,7 +201,7 @@ dialogsDraftFg: #dd4b39;                        // "Draft" word
 dialogsVerifiedIconBg: windowBgActive;          // Verification icon background
 dialogsVerifiedIconFg: COLOR_WHITE;             // Verification icon check color
 dialogsSendingIconFg: #c1c1c1;                  // Chat list sending message icon (clock)
-dialogsSentIconFg: #5dc452;                     // Chat list sent message tick / double tick icon
+dialogsSentIconFg: #5e5a9f;                     // Chat list sent message tick / double tick icon
 dialogsUnreadBg: COLOR_PURPLE_PIXEL;              // Chats list unread counter background
 dialogsUnreadBgMuted: #999999;                  // Chat list unread badge background for muted chat
 dialogsUnreadFg: COLOR_WHITE;                   // Unread counter text color
@@ -318,8 +318,8 @@ historyPeerUserpicFg: COLOR_WHITE;              // Default userpic initials
 // hue and saturation of the average background color if user chooses
 // some other (not bundled to this color theme) background. If the
 // bundled background is used those colors are not adjusted in any way.
-historyScrollBarBg: #15cd7d7a;                  // Scrollbar (history view) background (adjusted)
-historyScrollBarBgOver: #15cd7dbc;              // Scrollbar (history view) background (hover) (adjusted)
+historyScrollBarBg: #5e5a9feb;                  // Scrollbar (history view) background (adjusted)
+historyScrollBarBgOver: #5e5a9f53;              // Scrollbar (history view) background (hover) (adjusted)
 historyScrollBg: #6f72724d;                     // Scrollbar (history view) current position background (adjusted)
 historyScrollBgOver: #6f727280;                 // Scrollbar (history view) current position background (hover) (adjusted)
 
@@ -342,7 +342,7 @@ msgInDateFgSelected: COLOR_PURPLE_PIXEL;          // Incoming selected message d
 msgOutDateFg: COLOR_GRAY;                       // Outgoing message date text
 msgOutDateFgSelected: COLOR_PURPLE_PIXEL;         // Outgoing selected message date text
 msgServiceFg: COLOR_WHITE;                      // Service messages text color (join, left etc)
-msgServiceBg: #363838;                          // Service messages BACKGROUND color (join, left etc) (adjusted)
+msgServiceBg: #232329;                          // Service messages BACKGROUND color (join, left etc) (adjusted)
 msgServiceBgSelected: #8ca0b3a2;                // Service message selected text background (like in a service message about group title being changed) (adjusted)
 msgInReplyBarColor: COLOR_PURPLE_PIXEL;           // Incoming msg: vertical bar next to reply
 msgInReplyBarSelColor: COLOR_PURPLE_PIXEL;        // Incoming msg: vertical bar next to reply (selected)
@@ -363,20 +363,20 @@ msgFileThumbLinkInFgSelected: lightButtonFgOver; // Incoming selected media file
 msgFileThumbLinkOutFg: #5eba5b;                 // Outgoing media file message with thumbnail download / open with button text
 msgFileThumbLinkOutFgSelected: #31a298;         // Outgoing selected media file message with thumbnail download / open with button text
 msgFileInBg: windowBgActive;                    // Incoming audio file download circle background
-msgFileInBgOver: #63b56a;                       // Incoming audio file download circle background with mouse over
-msgFileInBgSelected: #63b56a;                   // Incoming selected audio file download circle background
+msgFileInBgOver: #5e5a9f;                       // Incoming audio file download circle background with mouse over
+msgFileInBgSelected: #5e5a9f;                   // Incoming selected audio file download circle background
 msgFileOutBg: COLOR_PURPLE_PIXEL;                 // Outgoing audio file download circle background
-msgFileOutBgOver: #6bc272;                      // Outgoing audio file download circle background with mouse over
-msgFileOutBgSelected: #5fb389;                  // Outgoing selected audio file download circle background
+msgFileOutBgOver: #5e5a9f;                      // Outgoing audio file download circle background with mouse over
+msgFileOutBgSelected: #7d78d2;                  // Outgoing selected audio file download circle background
 
 msgFile1Bg: #72b1df;                            // Blue shared links / files without image square thumbnail
 msgFile1BgDark: #5c9ece;                        // Blue shared files without image download circle background
 msgFile1BgOver: #5294c4;                        // Blue shared files without image download circle background with mouse over
 msgFile1BgSelected: #5099d0;                    // Blue shared files without image download circle background if file is selected
-msgFile2Bg: #61b96e;                            // Green shared links / shared files without image square thumbnail
-msgFile2BgDark: #4da859;                        // Green shared files without image download circle background
-msgFile2BgOver: #44a050;                        // Green shared files without image download circle background with mouse over
-msgFile2BgSelected: #46a07e;                    // Green shared files without image download circle background if file is selected
+msgFile2Bg: #5e5a9f;                            // Green shared links / shared files without image square thumbnail
+msgFile2BgDark: #7d78da;                        // Green shared files without image download circle background
+msgFile2BgOver: #7c76ed;                        // Green shared files without image download circle background with mouse over
+msgFile2BgSelected: #585686;                    // Green shared files without image download circle background if file is selected
 msgFile3Bg: #e47272;                            // Red shared links / shared files without image square thumbnail
 msgFile3BgDark: #cd5b5e;                        // Red shared files without image download circle background
 msgFile3BgOver: #c35154;                        // Red shared files without image download circle background with mouse over
@@ -434,7 +434,7 @@ historyToDownFg: menuIconFg;                    // "Scroll to bottom" internal i
 historyToDownFgOver: menuIconFgOver;            // "Scroll to bottom" internal icon color (hover)
 historyToDownShadow: #00000040;                 // "Scroll to bottom" button shadow
 
-historyComposeAreaBg: msgInBg;                  // Text input field background
+historyComposeAreaBg: #232329;                  // Text input field background
 historyComposeAreaFg: COLOR_WHITE;              // Text color in "Type your message" field
 historyComposeAreaFgService: msgInDateFg;       // Text color in "Type your message" field when replying to a media message
 historyComposeIconFg: menuIconFg;               // Text input field: Paperclip, Smile, Bot command icons
@@ -496,13 +496,13 @@ mediaviewFileGreenCornerFg: #49a957;            // Green file thumbnail placehol
 mediaviewFileBlueCornerFg: #599dcf;             // Blue file thumbnail placeholder corner in file rectangle (for a file without thumbnail, like .dmg)
 mediaviewFileExtFg: activeButtonFg;             // File extension text in file thumbnail placeholder in file rectangle
 
-mediaviewMenuBg: #383838;                       // Context menu in Media Viewer background
-mediaviewMenuBgOver: #505050;                   // Menu items background (hover)
-mediaviewMenuBgRipple: #676767;                 // Menu items background (press & hold)
+mediaviewMenuBg: #202026;                       // Context menu in Media Viewer background
+mediaviewMenuBgOver: #232329;                   // Menu items background (hover)
+mediaviewMenuBgRipple: #212121;                 // Menu items background (press & hold)
 mediaviewMenuFg: COLOR_WHITE;                   // Text color in media view menu
 
-mediaviewBg: #222222eb;                         // Media Viewer background
-mediaviewVideoBg: imageBg;                      // Media Viewer background when viewing a video in full screen
+mediaviewBg: #202026eb;                         // Media Viewer background
+mediaviewVideoBg: #232329;                      // Media Viewer background when viewing a video in full screen
 mediaviewControlBg: #0000003c;                  // Controls background (like next photo / previous photo)
 mediaviewControlFg: COLOR_WHITE;                // Controls icon (like next photo / previous photo)
 mediaviewCaptionBg: #11111180;                  // Caption text background (when viewing photo with caption)
@@ -512,7 +512,7 @@ mediaviewSaveMsgBg: toastBg;                    // 'Something was saved to % fol
 mediaviewSaveMsgFg: toastFg;                    // 'Something was saved to % folder' message text color
 
 mediaviewPlaybackActive: #c7c7c7;               // Video playback progress already played part
-mediaviewPlaybackInactive: #252525;             // Video playback progress upcoming (not played yet) part
+mediaviewPlaybackInactive: #232329;             // Video playback progress upcoming (not played yet) part
 mediaviewPlaybackActiveOver: COLOR_WHITE;       // Video playback progress already played part with mouse over
 mediaviewPlaybackInactiveOver: #474747;         // Video playback progress upcoming (not played yet) part with mouse over
 mediaviewPlaybackProgressFg: COLOR_WHITE;       // Video playback progress text
