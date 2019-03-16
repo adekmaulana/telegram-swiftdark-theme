@@ -1,12 +1,12 @@
 //////////////////////////////////////////////////////////////////////////////////////////////////
 //                                                                                              //
-//                          SwiftDark theme v1.0 for Telegram Desktop.                          //
+//                          SwiftDark theme v1.1 for Telegram Desktop.                          //
 //                                                                                              //
 //                                                                                              //
-//        Source code: https://github.com/techdro-id/telegram-swiftdark-theme                   //
+//        Source code: https://github.com/adekmaulana/telegram-swiftdark-theme                  //
 //                                                                                              //
-//        Published under MIT Licence. Feel free to modify this file whatever you want.         //
-//        Mentioning the original repo (see above) isn't mandatory, but highly appreciated!     //
+//        Published under MIT Licence. Feel free to modify this file whatever you want.          //
+//        Mentioning the original repo (see above) isn't mandatory, but highly appreciated!      //
 //                                                                                              //
 //                                                                                              //
 //////////////////////////////////////////////////////////////////////////////////////////////////
@@ -14,12 +14,12 @@
 // Color presets //
 
 COLOR_GRAY: #999999;                            
-COLOR_DARK: #202026;                                 // Main color (dark one)
-COLOR_BLUE_PIXEL: #5e97f6;                           // Accent color
-COLOR_BLUE_PIXEL_LIGHT: #4b8bf6;                     // Accent color #2 (just like first one with slight changes)
-COLOR_BLUE_RIPPLE_ACTIVE: #023956;
+COLOR_DARK: #16161c;                                 // Main color (dark one)
+COLOR_PURPLE_PIXEL: #5e5a9f;                           // Accent color
+COLOR_PURPLE_PIXEL_LIGHT: #5e5a79;                     // Accent color #2 (just like first one with slight changes)
+COLOR_PURPLE_RIPPLE_ACTIVE: #5e54af;
 
-COLOR_WHITE: #aeb7c4;
+COLOR_WHITE: #ffffff;
 COLOR_BLACK: #000000;
 COLOR_PINK: #e016a0;                            // Just for testing purposes :)
 
@@ -27,16 +27,16 @@ COLOR_PINK: #e016a0;                            // Just for testing purposes :)
 // basic
 windowBg: COLOR_DARK;                           // Window backgrounds
 windowFg: COLOR_WHITE;                          // Main text / chat text
-windowBgOver: #363838;                          // Search field background + buttons color in context menu
-windowBgRipple: #272828;                        // Inactive chat in chats list (press & hold)
+windowBgOver: #232329;                          // Search field background + buttons color in context menu
+windowBgRipple: #202026;                        // Inactive chat in chats list (press & hold)
 windowFgOver: windowFg;                         // black: fallback for over text color
 windowSubTextFg: COLOR_GRAY;                    // Chats list message preview text
 windowSubTextFgOver: #919191;                   // Mouse over chats list message preview text
 windowBoldFg: COLOR_WHITE;                      // Bold font (titles in Settings, Left menu options)
-windowBoldFgOver: COLOR_BLUE_PIXEL;             // Mouse over chats list chat name text (+ Left menu options on hover)
-windowBgActive: COLOR_BLUE_PIXEL;               // Active button background (+ checkboxes background)
+windowBoldFgOver: COLOR_PURPLE_PIXEL;             // Mouse over chats list chat name text (+ Left menu options on hover)
+windowBgActive: COLOR_PURPLE_PIXEL;               // Active button background (+ checkboxes background)
 windowFgActive: COLOR_WHITE;                    // Active selected chats list text / button text + checkboxes' "ticks" color
-windowActiveTextFg: COLOR_BLUE_PIXEL;           // Online status, links, recording cancel, etc
+windowActiveTextFg: COLOR_PURPLE_PIXEL;           // Online status, links, recording cancel, etc
 windowShadowFg: COLOR_BLACK;                    // Window border shadows
 windowShadowFgFallback: COLOR_DARK;             // Notification border
 
@@ -48,19 +48,19 @@ imageBg: COLOR_BLACK;                           // Image background fallback (wh
 imageBgTransparent: COLOR_WHITE;                // Image background when displaying an image with opacity where no opacity is needed
 
 //widgets
-activeButtonBg: COLOR_BLUE_PIXEL;               // Currently selected button background
+activeButtonBg: COLOR_PURPLE_PIXEL;             // Currently selected button background
 activeButtonBgOver: #00a32b;                    // Mouse over currently selected button background
-activeButtonBgRipple: COLOR_BLUE_RIPPLE_ACTIVE; // Primary button background color (and active chat) - Press & hold
+activeButtonBgRipple: COLOR_PURPLE_RIPPLE_ACTIVE;// Primary button background color (and active chat) - Press & hold
 activeButtonFg: COLOR_WHITE;                    // Currently selected button text
 activeButtonFgOver: activeButtonFg;             // Mouse over currently selected button text
 activeButtonSecondaryFg: COLOR_WHITE;           // Counter color on primary button
 activeButtonSecondaryFgOver: COLOR_WHITE;       // Counter color on primary button (hover)
-activeLineFg: COLOR_BLUE_PIXEL;                 // Active input field line color (normal)
+activeLineFg: COLOR_PURPLE_PIXEL;                 // Active input field line color (normal)
 activeLineFgError: #e48383;                     // Active input field line color (error)
 
 lightButtonBg: COLOR_DARK;                      // Secondary button background color (default)
-lightButtonBgOver: #424444;                     // Secondary button background color (hover)
-lightButtonBgRipple: #363838;                   // Secondary button background color (press & hold)
+lightButtonBgOver: COLOR_PURPLE_PIXEL;          // Secondary button background color (hover)
+lightButtonBgRipple: COLOR_PURPLE_RIPPLE_ACTIVE;// Secondary button background color (press & hold)
 lightButtonFg: COLOR_WHITE;                     // Secondary button text color
 lightButtonFgOver: lightButtonFg;               // Secondary button text color (hover)
 
@@ -78,7 +78,7 @@ menuBg: COLOR_DARK;                             // Default popup menu background
 menuBgOver: windowBgOver;                       // Default popup menu item background with mouse over
 menuBgRipple: windowBgRipple;                   // Default popup menu item ripple effect
 menuIconFg: COLOR_GRAY;                         // Icons color (left menu button, scroll down, paperclip..)
-menuIconFgOver: COLOR_BLUE_PIXEL;               // Icons color on hover (left menu button, scroll down, paperclip..)
+menuIconFgOver: COLOR_PURPLE_PIXEL;               // Icons color on hover (left menu button, scroll down, paperclip..)
 menuSubmenuArrowFg: #373737;                    // Default popup menu submenu arrow icon (like in message field context menu in case of RTL system language)
 menuFgDisabled: #727272;                        // Default popup menu item disabled text (like unavailable items in message field context menu)
 menuSeparatorFg: COLOR_DARK;                    // Default popup menu separator (like in message field context menu)
@@ -97,7 +97,7 @@ radialBg: #00000056;                            // Default radial loader backgro
 placeholderFg: COLOR_GRAY;                      // Inactive input box placeholder text
 placeholderFgActive: #aaaaaa;                   // Active input box placeholder text
 inputBorderFg: #e0e0e0;                         // Default input field bottom border (like in code input field when you log in and field is not focused)
-filterInputBorderFg: COLOR_BLUE_PIXEL;          // Default rounded input field border (like in chats list search field when field is focused)
+filterInputBorderFg: COLOR_PURPLE_PIXEL;          // Default rounded input field border (like in chats list search field when field is focused)
 filterInputInactiveBg: windowBgOver;            // Default rounded input field background (like in chats list search field when field is inactive)
 checkboxFg: #b3b3b3;                            // Default unchecked checkbox rounded rectangle (and also emoji category icons)
 
@@ -182,7 +182,7 @@ introErrorFg: COLOR_GRAY;                       // Login error text (like when p
 
 introCoverTopBg: COLOR_DARK;                    // Gradient finish at the top of the login screen
 introCoverBottomBg: COLOR_DARK;                 // Gradient start at the bottom of the login screen
-introCoverIconsFg: COLOR_BLUE_PIXEL;            // Icons and clouds colors
+introCoverIconsFg: COLOR_PURPLE_PIXEL;            // Icons and clouds colors
 introCoverPlaneTrace: #15cd7d69;                // Plane trace
 introCoverPlaneInner: #c6d8e8;                  // Plane color inside
 introCoverPlaneOuter: #a1bed4;                  // Plane color outside
@@ -202,7 +202,7 @@ dialogsVerifiedIconBg: windowBgActive;          // Verification icon background
 dialogsVerifiedIconFg: COLOR_WHITE;             // Verification icon check color
 dialogsSendingIconFg: #c1c1c1;                  // Chat list sending message icon (clock)
 dialogsSentIconFg: #5dc452;                     // Chat list sent message tick / double tick icon
-dialogsUnreadBg: COLOR_BLUE_PIXEL;              // Chats list unread counter background
+dialogsUnreadBg: COLOR_PURPLE_PIXEL;              // Chats list unread counter background
 dialogsUnreadBgMuted: #999999;                  // Chat list unread badge background for muted chat
 dialogsUnreadFg: COLOR_WHITE;                   // Unread counter text color
 
@@ -221,7 +221,7 @@ dialogsUnreadBgOver: dialogsUnreadBg;           // Chat list unread badge backgr
 dialogsUnreadBgMutedOver: dialogsUnreadBgMuted; // Chat list unread badge background for muted chat with mouse over
 dialogsUnreadFgOver: dialogsUnreadFg;           // Chat list unread badge text with mouse over
 
-dialogsBgActive: COLOR_BLUE_PIXEL;              // Active chat color (in chats list)
+dialogsBgActive: COLOR_PURPLE_PIXEL;              // Active chat color (in chats list)
 dialogsNameFgActive: COLOR_WHITE;               // Active chat name text (in chats list)
 dialogsChatIconFgActive: dialogsNameFgActive;   // Active chat group or channel icon (in chats list)
 dialogsDateFgActive: COLOR_WHITE;               // Active chat date color
@@ -243,14 +243,14 @@ dialogsForwardBg: dialogsBgActive;              // Forwarding panel background (
 dialogsForwardFg: dialogsNameFgActive;          // Forwarding panel text (when forwarding messages in the smallest window size)
 
 searchedBarBg: COLOR_DARK;                      // Search results window background color
-searchedBarFg: COLOR_BLUE_PIXEL;                // Search results text color
+searchedBarFg: COLOR_PURPLE_PIXEL;                // Search results text color
 
 // history
 topBarBg: COLOR_DARK;                           // Chat header background
 
 emojiPanBg: COLOR_DARK;                         // Sticker panel background
 emojiPanCategories: COLOR_DARK;                 // Sticker panel bottom bar background
-emojiPanHeaderFg: COLOR_BLUE_PIXEL;             // Sticker panel title text
+emojiPanHeaderFg: COLOR_PURPLE_PIXEL;             // Sticker panel title text
 emojiPanHeaderBg: COLOR_DARK;                   // Sticker panel top bar background
 stickerPanDeleteBg: #000000cc;                  // Delete X button background for custom sent stickers in stickers panel (legacy)
 stickerPanDeleteFg: COLOR_WHITE;                // Delete X button icon for custom sent stickers in stickers panel (legacy)
@@ -269,7 +269,7 @@ historyFileNameInFgSelected: historyFileNameInFg; // Incoming media filename tex
 historyFileNameOutFg: historyTextOutFg;         // Outgoing message filename text color
 historyFileNameOutFgSelected: historyFileNameOutFg; // Outgoing media filename text in a selected message
 historyOutIconFg: dialogsSentIconFg;            // "Eye" and "Checks" color for outgoing messages (selected)
-historyOutIconFgSelected: COLOR_BLUE_PIXEL;     // "Eye" and "Checks" color for outgoing messages (selected)
+historyOutIconFgSelected: COLOR_PURPLE_PIXEL;     // "Eye" and "Checks" color for outgoing messages (selected)
 historyIconFgInverted: COLOR_WHITE;             // "Checks" on stickers (outgoing)
 historySendingOutIconFg: #98d292;               // "Clock" icon while sending file (outgoing)
 historySendingInIconFg: #a0adb5;                // "Clock" icon while sending file (incoming)
@@ -331,26 +331,26 @@ msgSelectOverlay: #2223239b;                    // Selected media (images...) ov
 msgStickerOverlay: #2223237f;                   // Selected sticker overlay
 msgInServiceFg: windowActiveTextFg;             // Incoming reply quoted name
 msgInServiceFgSelected: windowActiveTextFg;     // Selected incoming reply quoted name
-msgOutServiceFg: COLOR_BLUE_PIXEL_LIGHT;        // Outgoing reply quoted name
+msgOutServiceFg: COLOR_PURPLE_PIXEL_LIGHT;        // Outgoing reply quoted name
 msgOutServiceFgSelected: #367570;               // Selected outgoing reply quoted name
 msgInShadow: #3d3c3c29;                         // Incoming message box shadow
 msgInShadowSelected: #2f303029;                 // Selected incoming message box shadow
 msgOutShadow: #4e4f4e40;                        // Outgoing message box shadow
 msgOutShadowSelected: #2f303040;                // Selected outgoing message box shadow
 msgInDateFg: #a0acb6;                           // Incoming message date text
-msgInDateFgSelected: COLOR_BLUE_PIXEL;          // Incoming selected message date text
+msgInDateFgSelected: COLOR_PURPLE_PIXEL;          // Incoming selected message date text
 msgOutDateFg: COLOR_GRAY;                       // Outgoing message date text
-msgOutDateFgSelected: COLOR_BLUE_PIXEL;         // Outgoing selected message date text
+msgOutDateFgSelected: COLOR_PURPLE_PIXEL;         // Outgoing selected message date text
 msgServiceFg: COLOR_WHITE;                      // Service messages text color (join, left etc)
 msgServiceBg: #363838;                          // Service messages BACKGROUND color (join, left etc) (adjusted)
 msgServiceBgSelected: #8ca0b3a2;                // Service message selected text background (like in a service message about group title being changed) (adjusted)
-msgInReplyBarColor: COLOR_BLUE_PIXEL;           // Incoming msg: vertical bar next to reply
-msgInReplyBarSelColor: COLOR_BLUE_PIXEL;        // Incoming msg: vertical bar next to reply (selected)
-msgOutReplyBarColor: COLOR_BLUE_PIXEL;          // Outgoing msg: vertical bar next to reply
-msgOutReplyBarSelColor: COLOR_BLUE_PIXEL;       // Outgoing msg: vertical bar next to reply (selected)
+msgInReplyBarColor: COLOR_PURPLE_PIXEL;           // Incoming msg: vertical bar next to reply
+msgInReplyBarSelColor: COLOR_PURPLE_PIXEL;        // Incoming msg: vertical bar next to reply (selected)
+msgOutReplyBarColor: COLOR_PURPLE_PIXEL;          // Outgoing msg: vertical bar next to reply
+msgOutReplyBarSelColor: COLOR_PURPLE_PIXEL;       // Outgoing msg: vertical bar next to reply (selected)
 msgImgReplyBarColor: msgServiceFg;              // Sticker message reply outline
-msgInMonoFg: COLOR_BLUE_PIXEL;                  // Monowidth font / incoming msg
-msgOutMonoFg: COLOR_BLUE_PIXEL;                 // Monowidth font / outgoing msg
+msgInMonoFg: COLOR_PURPLE_PIXEL;                  // Monowidth font / incoming msg
+msgOutMonoFg: COLOR_PURPLE_PIXEL;                 // Monowidth font / outgoing msg
 msgInMonoFgSelected: msgInMonoFg;               // Incoming message monospace text in a selected text or message
 msgOutMonoFgSelected: msgOutMonoFg;             // Outgoing message monospace text in a selected text or message
 msgDateImgFg: msgServiceFg;                     // Media message time text (like time text in a sent photo)
@@ -365,7 +365,7 @@ msgFileThumbLinkOutFgSelected: #31a298;         // Outgoing selected media file 
 msgFileInBg: windowBgActive;                    // Incoming audio file download circle background
 msgFileInBgOver: #63b56a;                       // Incoming audio file download circle background with mouse over
 msgFileInBgSelected: #63b56a;                   // Incoming selected audio file download circle background
-msgFileOutBg: COLOR_BLUE_PIXEL;                 // Outgoing audio file download circle background
+msgFileOutBg: COLOR_PURPLE_PIXEL;                 // Outgoing audio file download circle background
 msgFileOutBgOver: #6bc272;                      // Outgoing audio file download circle background with mouse over
 msgFileOutBgSelected: #5fb389;                  // Outgoing selected audio file download circle background
 
@@ -400,11 +400,11 @@ historyFileThumbRadialFg: COLOR_WHITE;          // File with thumbnail (or photo
 historyFileThumbRadialFgSelected: COLOR_WHITE;  // Selected file with thumbnail (or photo / video) radial download animation line
 
 msgWaveformInActive: windowBgActive;            // Incoming Voice "heard" part
-msgWaveformInActiveSelected: COLOR_BLUE_PIXEL;  // Selected incoming Voice "heard" part
+msgWaveformInActiveSelected: COLOR_PURPLE_PIXEL;  // Selected incoming Voice "heard" part
 msgWaveformInInactive: #d4dee6;                 // Incoming Voice "unheard" part
 msgWaveformInInactiveSelected: COLOR_WHITE;     // Selected incoming Voice "unheard" part
 msgWaveformOutActive: windowBgActive;           // Outgoing Voice "heard" part
-msgWaveformOutActiveSelected: COLOR_BLUE_PIXEL; // Selected outgoing Voice "heard" part
+msgWaveformOutActiveSelected: COLOR_PURPLE_PIXEL; // Selected outgoing Voice "heard" part
 msgWaveformOutInactive: COLOR_WHITE;            // Outgoing Voice "unheard" part
 msgWaveformOutInactiveSelected: COLOR_WHITE;    // Selected outgoing Voice "unheard" part
 
@@ -461,7 +461,7 @@ overviewPhotoSelectOverlay: #40ace333;          // Shared photos / videos / link
 profileStatusFgOver: #7c99b2;                   // Group members list in group profile user last seen text with mouse over
 profileVerifiedCheckBg: windowBgActive;         // Profile verified check icon background
 profileVerifiedCheckFg: windowFgActive;         // Profile verified check icon tick
-profileAdminStartFg: COLOR_BLUE_PIXEL;          // Star color for group/channhel admins and moderators (look in members list)
+profileAdminStartFg: COLOR_PURPLE_PIXEL;          // Star color for group/channhel admins and moderators (look in members list)
 
 // settings
 notificationsBoxMonitorFg: COLOR_GRAY;          // Custom notifications settings box monitor color
@@ -482,7 +482,7 @@ mainMenuCloudFg: activeButtonFg;                // "Cloud" icon in main menu
 mainMenuCloudBg: activeButtonBgRipple;          // "Cloud" icon background in main menu
 
 mediaPlayerBg: COLOR_DARK;                      // Music player background
-mediaPlayerActiveFg: CCOLOR_BLUE_PIXEL;         // Clickable Next song/Prev song button in music player + played part color
+mediaPlayerActiveFg: COLOR_PURPLE_PIXEL;         // Clickable Next song/Prev song button in music player + played part color
 mediaPlayerInactiveFg: #4f5151;                 // "Disabled" Next song/Prev song button in music player + not player part color
 mediaPlayerDisabledFg: #9dd1ef;                 // Music player audio loading progress (when you're playing an audio file and switch to the previous one which is not loaded yet)
 
