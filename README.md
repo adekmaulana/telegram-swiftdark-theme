@@ -2,7 +2,7 @@
 A "Swift Dark" Inspired Theme for Telegram Desktop
 
 Screenshoot
-![Swift Dark](https://i.imgur.com/msYaaX7.png)
+![Swift Dark](https://i.imgur.com/BZtLr16.png)
 
 ## How to modify & install theme
 
