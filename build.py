@@ -21,7 +21,7 @@ def main():
     runpath = os.getcwd()
     rawpath = dirname(realpath(sys.argv[0]))
     name = 'SwiftDark'
-    version = '2.0'
+    version = '2.1'
     print()
     os.chdir(rawpath)
     zip(name, version)

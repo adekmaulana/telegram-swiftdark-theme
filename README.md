@@ -10,6 +10,5 @@ There's an [official guide](http://telegra.ph/Create-Telegram-Theme-01-12) how t
 
 1) Edit colors.tdesktop-theme file.  
 2) Change background (if you want). Tiled backgrounds should be named `tiled.png` or `tiled.jpg` while normal backgrounds should be names as `background.png` or `background.jpg`.  
-3) Pack both files into zip-archive and rename it as `YOUR-THEME.tdesktop-theme` (watch the extension!).  
-4) Send it to any chat in Telegram Desktop, then download, click and apply!  
-5) If you want to revert to default theme, click `Use default color theme` button in settings.  
+3) Use `build.py` to pack the themes.
+4) Go to Settings > Chat Settings > Chat Background (Choose from file), and choose the file that already built.
